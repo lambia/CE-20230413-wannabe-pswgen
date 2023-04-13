@@ -62,5 +62,19 @@ if (nomeOk && cognomeOk && coloreOk) {
 
     console.error("Impossibile generare una password: dati mancanti.");
 
+    //Controlliamo che nome/cognome/colore siano mancanti e stampiamo in console
+    //Lo facciamo separatamente, senza usare ELSE (ricordate perchè!)
+    if(!nomeOk) {
+        console.error("Nome mancante!");
+    }
+
+    if(!cognomeOk) {
+        console.error("Cognome mancante!");
+    }
+    
+    if(!coloreOk) {
+        console.error("Colore mancante!");
+    }
+
 }
 
