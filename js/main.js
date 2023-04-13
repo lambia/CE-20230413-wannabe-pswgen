@@ -11,10 +11,10 @@ let nome = prompt("Inserisci il tuo nome");
 //Se UNA di queste due condizioni si verifica, avvisiamo l'utente
 if (nome == null || nome == "") {
     alert("Non hai inserito un nome");
-//Se invece l'utente ha inserito un nome, controlliamo che non sia troppo corto
+    //Se invece l'utente ha inserito un nome, controlliamo che non sia troppo corto
 } else if (nome.length < 2) {
     alert("Il nome è troppo corto");
-//Se invece l'utente ha inserito un nome lungo almeno 2 caratteri...
+    //Se invece l'utente ha inserito un nome lungo almeno 2 caratteri...
 } else {
     console.log("L'utente ha inserito un nome valido");
     //nomeOk = !nomeOk;
@@ -55,7 +55,7 @@ if (nomeOk && cognomeOk && coloreOk) {
 
     console.log("La nuova password è: ", password);
 
-//Altrimenti, avvisiamo l'utente sia in pagina che in console
+    //Altrimenti, avvisiamo l'utente sia in pagina che in console
 } else {
 
     document.getElementById("password").innerText = "Nessuna password per te, ricarica la pagina e inserisci i dati.";
@@ -64,15 +64,15 @@ if (nomeOk && cognomeOk && coloreOk) {
 
     //Controlliamo che nome/cognome/colore siano mancanti e stampiamo in console
     //Lo facciamo separatamente, senza usare ELSE (ricordate perchè!)
-    if(!nomeOk) {
+    if (!nomeOk) {
         console.error("Nome mancante!");
     }
 
-    if(!cognomeOk) {
+    if (!cognomeOk) {
         console.error("Cognome mancante!");
     }
-    
-    if(!coloreOk) {
+
+    if (!coloreOk) {
         console.error("Colore mancante!");
     }
 
